@@ -17,7 +17,6 @@ namespace Factorial
 
         private static int FindFactorial(int num)
         {
-
             if (num == 0) 
             {
                 return 1;
@@ -26,7 +25,6 @@ namespace Factorial
             {
                 return num * FindFactorial(num - 1);
             }
-
         }
     }
 }
