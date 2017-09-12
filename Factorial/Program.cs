@@ -17,11 +17,16 @@ namespace Factorial
 
         private static int FindFactorial(int num)
         {
-            int returnFactorial;
 
-            returnFactorial = 4;
+            if (num == 0) 
+            {
+                return 1;
+            } 
+            else 
+            {
+                return num * FindFactorial(num - 1);
+            }
 
-            return returnFactorial;
         }
     }
 }
